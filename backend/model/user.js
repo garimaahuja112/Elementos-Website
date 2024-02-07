@@ -20,7 +20,10 @@
         required:true
     },
     event:{
-        
+        type:String,
+        required:true
     }
  });
- export default mongoose.model("user",userScheme);
+const user = mongoose.model("user",userScheme);
+
+export default user;
