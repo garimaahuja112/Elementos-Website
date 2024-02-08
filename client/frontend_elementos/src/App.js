@@ -1,9 +1,11 @@
 import React from "react";
-
+import Nav from "./components/Nav";
+import Lbody from "./components/Lbody";
 function App() {
   return (
-    <div className="font-bold">
-     heloooo jiii welcome to  elementos
+    <div className="min-h-screen bg-gradient-to-b from-black  to to-black">
+     <Nav />
+    <Lbody />
     </div>
   );
 }
