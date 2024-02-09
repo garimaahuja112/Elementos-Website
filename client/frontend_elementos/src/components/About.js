@@ -7,8 +7,8 @@ import myframe4 from '../images/myframe4.png'
 import aboutelementos from '../images/aboutelementos.png'
 const About = () => {
   return (
-    <div >
-        <div  className="absolute h-[250px] w-[400px] left-[250px] top-[50px] z-10" >
+    <div className=""  >
+        <div  className="absolute h-[250px] w-[400px] left-[250px] top-[90px] z-10" >
         <img src={myframe1} alt="topleftframe" className="absolute  "  />
         <div className="flex flex-col justify-center items-center gap-3 font-serif">
             <h1>heading 1</h1>
@@ -16,7 +16,7 @@ const About = () => {
         </div>
         </div>
        
-       <div className="absolute h-[250px] w-[400px] left-[810px] top-[50px] z-10" >
+       <div className="absolute h-[250px] w-[400px] left-[810px] top-[90px] z-10" >
        <img src={myframe2} alt="topleftframe" className="absolute" />
        <div className="flex flex-col justify-center items-center gap-3 font-serif">
             <h1>heading 1</h1>
@@ -43,12 +43,12 @@ const About = () => {
        
          
          <div>
-         <img src={aboutelementos} alt="topleftframe" className="absolute h-[250px] w-[400px] left-[540px] top-[230px] z-10" />
+         <img src={aboutelementos} alt="topleftframe" className="absolute h-[250px] w-[400px] left-[540px] top-[265px] z-10" />
          </div>
         
         
-
-        <img src={aboutMan} alt="man" className=" w-[938px] h-[670px] relative left-[250px] " />
+           
+        <img src={aboutMan} alt="man" className="w-[938px] h-[670px] relative left-[250px] z-0 " />
     </div>
   )
 }
