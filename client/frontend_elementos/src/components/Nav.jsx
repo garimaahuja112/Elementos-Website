@@ -1,22 +1,25 @@
 import React from "react";
 import logo from "../images/logo.png"
-import { NavLink } from "react-router-dom";
+
 const Nav =() =>{
+   
 return(
     <>
-        <div className="flex flex-row justify-between h-3vh " > <img className="w-24 p-1" src={logo}  />
+        <div className="flex flex-row justify-between h-3vh " > <img className="w-24 p-1" src={logo} alt=""  />
         <div className="flex flex-row gap-x-10 mr-10 items-center "> 
-        <NavLink to="/">HOME</NavLink>
-        <NavLink to="/about" >
-        About elementos
-        </NavLink>
-        <NavLink to="/" >
+        
+        <a href="#Events" >
+        <div className="text-xl transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300" style={{fontFamily:'coiny'}}>
+         About elementos
+         </div>
+         </a>
+        <a href="#Events" >
+        <div className="text-xl transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 "  style={{fontFamily:'coiny'}}>
          Events
-        </NavLink>
+         </div>
+         </a>
         </div>
         </div>
-
-    
     </>
 )
 }

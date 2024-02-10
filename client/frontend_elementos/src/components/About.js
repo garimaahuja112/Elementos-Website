@@ -9,7 +9,7 @@ const About = () => {
   return (
     <div >
       <div>
-      <img src={aboutMan} alt="man" className=" w-[700px] h-[800px] lg:w-[1000px] lg:h-[600px] absolute lg:top-[1080px] lg:left-[300px] lg:opacity-100 opacity-65 z-0 " />
+      <img src={aboutMan} alt="man" className=" w-[700px] h-[800px] lg:w-[1000px] lg:h-[600px] absolute  lg:left-[300px] lg:opacity-100 opacity-65 z-0 " />
       </div>
       
      <div >
@@ -23,7 +23,7 @@ const About = () => {
         <div className="flex flex-col items-center justify-center gap-2 font-serif">
             <h1>heading 1</h1>
             <div className=" h-[100px] w-[250px]  z-40">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit beatae aperiam molestias? Fuga illum aliquam exercitationem tempore quaerat placeat beatae qui aspernatur autem rerum? Vitae, recusandae! Nihil molestiae ipsa </p>
+            <p className="text-[12px] lg:text-[15px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit beatae aperiam molestias? Fuga illum aliquam exercitationem tempore quaerat placeat beatae qui aspernatur autem rerum? Vitae, recusandae! Nihil molestiae ipsa </p>
             </div>
            
         </div>
@@ -37,7 +37,7 @@ const About = () => {
        <div className="flex flex-col justify-center items-center gap-3 font-serif ">
             <h1 className="z-40 mt-[70px] lg:mt-0 ">heading 2</h1>
             <div className="h-[100px] w-[250px] z-40 ">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit beatae aperiam molestias? Fuga illum aliquam exercitationem tempore quaerat placeat beatae qui aspernatur autem rerum? Vitae, recusandae! Nihil molestiae ipsa </p>
+            <p className="text-[12px] lg:text-[15px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit beatae aperiam molestias? Fuga illum aliquam exercitationem tempore quaerat placeat beatae qui aspernatur autem rerum? Vitae, recusandae! Nihil molestiae ipsa </p>
             </div>
         </div>
        
@@ -54,7 +54,7 @@ const About = () => {
          <div className="flex flex-col justify-center items-center gap-3 font-serif">
             <h1 className="mt-[110px] lg:mt-0 z-40">heading 3</h1>
             <div className="h-[100px] w-[250px] z-40">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit beatae aperiam molestias? Fuga illum aliquam exercitationem tempore quaerat placeat beatae qui aspernatur autem rerum? Vitae, recusandae! Nihil molestiae ipsa </p>
+            <p className="text-[12px] lg:text-[15px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit beatae aperiam molestias? Fuga illum aliquam exercitationem tempore quaerat placeat beatae qui aspernatur autem rerum? Vitae, recusandae! Nihil molestiae ipsa </p>
             </div>
         </div>
          </div>
@@ -64,7 +64,7 @@ const About = () => {
         <div className="flex flex-col justify-center items-center gap-3 font-serif">
             <h1 className="mt-[100px] lg:mt-0 z-40">heading 4</h1>
             <div className="h-[100px] w-[250px] z-40">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit beatae aperiam molestias? Fuga illum aliquam exercitationem tempore quaerat placeat beatae qui aspernatur autem rerum? Vitae, recusandae! Nihil molestiae ipsa</p>
+            <p className="text-[12px] lg:text-[15px]"  >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit beatae aperiam molestias? Fuga illum aliquam exercitationem tempore quaerat placeat beatae qui aspernatur autem rerum? Vitae, recusandae! Nihil molestiae ipsa</p>
             </div>
         </div>
         </div>
