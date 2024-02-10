@@ -4,7 +4,6 @@ import { Carousel } from 'react-responsive-3d-carousel';
 import image3 from "../images/image3.png";
 
 
-
 export default function App() {
     
     
@@ -52,6 +51,7 @@ export default function App() {
         </div>
       ))}
     </Carousel>
+   
     </div>
   );
 }
