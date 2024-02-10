@@ -6,14 +6,21 @@ import Nav from "./components/Nav";
 import Lbody from "./components/Lbody";
 function App() {
   return (
-    <div className="font-bold bg-black text-white">
+    <>
+     <div className="font-bold bg-black text-white">
      <Nav />
     <Routes>
               <Route path="/" element={<Lbody/>}></Route>
-              <Route path="/about" element={<About/>}></Route>
 
      </Routes>
+    
     </div>
+    <div className="bg-black h-[1200px] ">
+      <About/>
+    </div>
+   
+    </>
+   
 
      
 
