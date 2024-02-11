@@ -5,6 +5,10 @@ import Nav from "./components/Nav";
 import Lbody from "./components/Lbody";
 import Events from './components/Events';
 import Register from "./components/Register";
+import Bottom from "./components/Bottom";
+
+
+
 function App() {
   return (
     <>
@@ -21,6 +25,9 @@ function App() {
 
    <Events />
    <Register/>
+   <Bottom/>
+   
+  
    
    </div>
   
