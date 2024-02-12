@@ -7,7 +7,7 @@ import myframe4 from '../images/myframe4.png'
 // import aboutelementos from '../images/aboutelementos.png'
 const About = () => {
   return (
-    <div >
+    <div id ="about" >
       <div>
       <img src={aboutMan} alt="man" className=" w-[700px] h-[800px] lg:w-[1000px] lg:h-[600px] absolute  lg:left-[300px] lg:opacity-100 opacity-65 z-0 " />
       </div>
