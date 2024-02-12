@@ -39,7 +39,7 @@ export default function App() {
 
   return (
     <div>
-    <h3  id="Events"className='text-white  text-center text-sky-300 mt-16 text-6xl mb-20' style={{fontFamily:'coiny'}}>Events</h3>
+    <h3  id="Events"className='text-white  text-center text-sky-300 mt-64 text-6xl mb-20' style={{fontFamily:'coiny'}}>Events</h3>
     <Carousel images={images} {...carouselSettings} spread='wide' width='800px' height='700px' showStatus={false} showIndicators={false}>
       {images.map((image, index) => (
         <div key={index} style={customStyle}>

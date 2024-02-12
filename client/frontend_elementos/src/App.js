@@ -11,31 +11,17 @@ import Bottom from "./components/Bottom";
 
 function App() {
   return (
-    <>
+    
       
     <div className="font-bold bg-black text-white scroll-smooth">
     <Nav />
     <Lbody />
-    <div className="bg-black h-[1000px]">
-      <About/>
-      
-    </div>
-
-   <div className="flex flex-col">
-
+    <About/>
    <Events />
    <Register/>
    <Bottom/>
-   
-  
-   
    </div>
-  
-  
-    </div>
     
-   
-    </>
    
   )
 }
