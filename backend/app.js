@@ -2,12 +2,15 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 import user from './model/user.js';
+import dotenv from 'dotenv';
 
+dotenv.config({path:'./config.env'});
+const DB=process.env.DATABASE;
 const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-mongoose.connect('mongodb+srv://mokshmahajan2004:xui8KeYMtbTN58dU@cluster0.cywnbpd.mongodb.net/?retryWrites=true&w=majority').then(() => app.listen(5000)).then(() => console.log("Connected To Database and Listening to Localhost 5000")).catch((err) => console.log(err));
+mongoose.connect(DB).then(() => app.listen(5000)).then(() => console.log("Connected To Database and Listening to Localhost 5000")).catch((err) => console.log(err));
 
 app.get("/registrations", function (req, res) {
     try {
