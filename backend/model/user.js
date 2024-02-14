@@ -8,8 +8,7 @@
     },
     email:{
         type:String,
-        required:true,
-        unique:true
+        required:true
     },
     branch:{
         type:String,
@@ -19,7 +18,7 @@
         type:String,
         required:true
     },
-    event:{
+    eventName:{
         type:String,
         required:true
     }

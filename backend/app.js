@@ -23,8 +23,56 @@ app.get("/registrations", function (req, res) {
 });
 
 app.post("/event1", function (req, res) {
-    const userData = new user({ name: req.body.name, email: req.body.email, branch: req.body.branch, year: req.body.year, event: "event1" });
-    userData.save()
+    const userData = new user({ name: req.body.name, email: req.body.email, branch: req.body.branch, year: req.body.year, eventName: "event1" });
+
+    user.find({eventName:"event1", email:req.body.email}).then(function(registeredUsers){
+        console.log(registeredUsers);
+        if(registeredUsers.length!=0){
+                res.status(400).send("User already registered in this event");
+        }
+        else{
+            userData.save()
+            .then(item => {
+                res.send("Item saved to database");
+            })
+            .catch(err => {
+                console.log(err);
+                res.status(400).send("Unable to save to database");
+            });
+        }});
+});
+
+
+app.post("/event2", function (req, res) {
+    const userData = new user({ name: req.body.name, email: req.body.email, branch: req.body.branch, year: req.body.year, eventName: "event2" });
+    
+    user.find({eventName:"event2", email:req.body.email}).then(function(registeredUsers){
+        console.log(registeredUsers);
+        if(registeredUsers.length!=0){
+                res.status(400).send("User already registered in this event");
+        }
+        else{
+            userData.save()
+            .then(item => {
+                res.send("Item saved to database");
+            })
+            .catch(err => {
+                console.log(err);
+                res.status(400).send("Unable to save to database");
+            });
+        }});
+});
+
+app.post("/event3", function (req, res) {
+    const userData = new user({ name: req.body.name, email: req.body.email, branch: req.body.branch, year: req.body.year, eventName: "event3" });
+    
+    user.find({eventName:"event3", email:req.body.email}).then(function(registeredUsers){
+    console.log(registeredUsers);
+    if(registeredUsers.length!=0){
+            res.status(400).send("User already registered in this event");
+    }
+    else{
+        userData.save()
         .then(item => {
             res.send("Item saved to database");
         })
@@ -32,38 +80,26 @@ app.post("/event1", function (req, res) {
             console.log(err);
             res.status(400).send("Unable to save to database");
         });
-});
-
-app.post("/event2", function (req, res) {
-    const userData = new user({ name: req.body.name, email: req.body.email, branch: req.body.branch, year: req.body.year, event: "event2" });
-    userData.save()
-        .then(item => {
-            res.send("Item saved to database");
-        })
-        .catch(err => {
-            res.status(400).send("Unable to save to database");
-        });
-});
-
-app.post("/event3", function (req, res) {
-    const userData = new user({ name: req.body.name, email: req.body.email, branch: req.body.branch, year: req.body.year, event: "event3" });
-    userData.save()
-        .then(item => {
-            res.send("Item saved to database");
-        })
-        .catch(err => {
-            res.status(400).send("Unable to save to database");
-        });
+    }});
 });
 
 app.post("/event4", function (req, res) {
-    const userData = new user({ name: req.body.name, email: req.body.email, branch: req.body.branch, year: req.body.year, event: "event4" });
-    userData.save()
-        .then(item => {
-            res.send("Item saved to database");
-        })
-        .catch(err => {
-            res.status(400).send("Unable to save to database");
-        });
+    const userData = new user({ name: req.body.name, email: req.body.email, branch: req.body.branch, year: req.body.year, eventName: "event4" });
+    
+    user.find({eventName:"event4", email:req.body.email}).then(function(registeredUsers){
+        console.log(registeredUsers);
+        if(registeredUsers.length!=0){
+                res.status(400).send("User already registered in this event");
+        }
+        else{
+            userData.save()
+            .then(item => {
+                res.send("Item saved to database");
+            })
+            .catch(err => {
+                console.log(err);
+                res.status(400).send("Unable to save to database");
+            });
+        }});
 });
 
