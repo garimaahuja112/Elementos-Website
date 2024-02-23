@@ -1,11 +1,17 @@
 import "./index.css"
 import About from './components/About';
 import React from "react";
-import Nav from "./components/Nav";
+
 import Lbody from "./components/Lbody";
 import Events from './components/Events';
 import Register from "./components/Register";
 import Bottom from "./components/Bottom";
+
+import Navbar from "./components/Nav";
+import Hero from "./components/Hero";
+import Faq from "./components/Faq";
+import Caraousel from "./components/Carousel";
+
 
 
 
@@ -14,12 +20,20 @@ function App() {
     
       
     <div className="font-bold bg-black text-white scroll-smooth">
-    <Nav />
+   
+  <Navbar/>
+  <Hero/>
     <Lbody />
     <About/>
-   <Events />
+   <Caraousel/>
    <Register/>
+   <Faq/>
    <Bottom/>
+   
+   
+   
+   
+  
    </div>
     
    
